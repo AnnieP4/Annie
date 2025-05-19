@@ -40,11 +40,11 @@ ballHitPaddle.persistent = false;
 gameEventArray.push(ballHitPaddle);
 
 export var leftScoreHit = new GameEvent();
-leftScoreHit.persistent = true;
+leftScoreHit.persistent = false;
 gameEventArray.push(leftScoreHit);
 
 export var rightScoreHit = new GameEvent();
-rightScoreHit.persistent = true;
+rightScoreHit.persistent = false;
 gameEventArray.push(rightScoreHit);
 
 export var leftScoreHigher = new GameEvent();
