@@ -40,10 +40,10 @@ export class Ball {
   ) {
     this.size = { x: 20, y: 20 }; // default ball size
     this.position = { x: 50, y: 50 }; // default ball position
-    this.direction = { x: 90, y: 90 }; //Ball speed when game starts
+    this.direction = { x: 100, y: 100 }; //Ball speed when game starts
     this.acceleration = 10000; //X speed multipler on successful block
     this.initial = { x: 2, y: 0 }; //speed reset on point score
-    this.maximum = { x: 20, y: 10 }; //maximum speed
+    this.maximum = { x: 200000, y: 100000 }; //maximum speed
     this.inertialTransfer = 0.25; //multiplier for velocity.y transfer from paddle
     this.htmlElement = null; //element on HTML page
   }
@@ -65,7 +65,7 @@ export class Paddle {
     this.oldPosition = { x: 50, y: 50 }; //paddle position 1 frame ago
     this.velocity = { x: 0, y: 0 }; //calculated velocity
     this.direction = { x: 0, y: 0 }; //position offset
-    this.speed = 30; //rate that paddle moves with keyboard
+    this.speed = 70; //rate that paddle moves with keyboard
     this.hasHit = false; //keep track of wheter paddle hit ball or not
     this.htmlElement = null; //element on HTML page
   }
