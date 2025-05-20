@@ -62,10 +62,10 @@ export class Paddle {
   ) {
     this.size = { x: 10, y: 75 }; //default paddle size
     this.position = { x: 50, y: 50 }; //paddle position, (Y is top)
-    this.oldPosition = { x: 20, y: 20 }; //paddle position 1 frame ago
+    this.oldPosition = { x: 50, y: 50 }; //paddle position 1 frame ago
     this.velocity = { x: 0, y: 0 }; //calculated velocity
     this.direction = { x: 0, y: 0 }; //position offset
-    this.speed = 50; //rate that paddle moves with keyboard
+    this.speed = 20; //rate that paddle moves with keyboard
     this.hasHit = false; //keep track of wheter paddle hit ball or not
     this.htmlElement = null; //element on HTML page
   }
